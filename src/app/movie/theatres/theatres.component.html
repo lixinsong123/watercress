@@ -1,0 +1,30 @@
+<div class="app">
+	<h1>影院热映</h1>
+	<section class="grid">
+		<a [href]="item.alt" class="item" *ngFor="let item of theater_data" >
+			<div class="cover">
+				<div class="wrap">
+					<img [src]="item.images.large" [alt]="item.title">
+				</div>
+			</div>
+			<div class="info">
+				<h4></h4>
+				<h3>
+					{{item.title}}
+				</h3>
+				<p class="rank" >
+					<span class="rating-stars">
+						<span class='rating-star rating-star-small-full'></span>
+						<span class='rating-star rating-star-small-full'></span>
+						<span class='rating-star rating-star-small-full'></span>
+						<span class='rating-star rating-star-small-full'></span>
+						<span class='rating-star rating-star-small-gray'></span>
+					</span>
+					<span>{{item.rating.average}}</span>
+				</p>
+				<p class="meta">乔·沃茨/汤姆·霍兰德/小罗伯特·唐尼/玛丽莎·托梅/动作/科幻/冒险/2017-09-08(中国大陆)</p>
+				<cite></cite>
+			</div>
+		</a>
+	</section>
+</div>

@@ -1,0 +1,173 @@
+<div class="page">
+	<div class="card">
+	  <section class="movie-theatres" style="height: 227px;overflow: hidden;">
+			<header>
+				<h2>
+					最受欢迎图书 | 虚构类
+				</h2>
+				<a a routerLink="fiction">更多</a>
+			</header>
+			<div class="section-content">
+				<ul class="row items"> 
+					<li class="item item__movie"  *ngFor="let item of fictionData">
+						<a [href]="item.a_href">
+							<div class="item-poster">
+								<img [src]="item.img_src">
+							</div>
+							<span class="item-title">{{item.title}}</span>
+							<div class="item-rating">
+								<span class="rating-stars">
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-gray'></span>
+								</span>
+								<span>{{item.rank}}</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+	  </section>
+	   <section class="movie-theatres" style="height: 227px;overflow: hidden;" >
+			<header>
+				<h2>
+					最受欢迎图书 | 非虚构类
+				</h2>
+				<a routerLink="/movie/theatres">更多</a>
+			</header>
+			<div class="section-content">
+				<ul class="row items"> 
+					<li class="item item__movie" *ngFor="let item of nofictionData">
+						<a [href]="item.a_href">
+							<div class="item-poster">
+								<img [src]="item.img_src">
+							</div>
+							<span class="item-title">{{item.title}}</span>
+							<div class="item-rating">
+								<span class="rating-stars">
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-gray'></span>
+								</span>
+								<span>{{item.rank}}</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+	  </section>
+	   <section  style="height: 369px;overflow: hidden;">
+			<header>
+				<h2>
+					豆瓣书店
+				</h2>
+				<a routerLink="/movie/newFilm">更多</a>
+			</header>
+			<a href="https://market.douban.com/book/liaoyimei?utm_campaign=book_freyr_section&utm_source=douban&utm_medium=mobile_web"
+				class="promBook">
+				<img class="cover" src="https://img1.doubanio.com/view/freyr_page_photo/raw/public/2029.jpg" alt="悲观主义三部曲">
+				<div class="content"> 
+					<div class="title">
+						<span class="price">¥ 164</span>
+						<p class="name">悲观主义三部曲</p>
+					</div>
+					<p class="infoWithoutReviewer">从《恋爱的犀牛》到《柔软》，和廖一梅谈谈爱和生命</p>
+				</div>
+			</a>
+			<div class="section-content">
+				<ul class="row items"> 
+					<li class="item item__movie"  *ngFor="let item of bookstore">
+						<a [href]="item.a_href">
+							<div class="item-poster">
+								<img [src]="item.img_src">
+							</div>
+							<span class="item-title">{{item.title}}</span>
+							<div class="item-rating">
+								<span>{{item.price}}</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+	  </section>
+	   <section class="interests" style="height: 180px;overflow: hidden;">
+			<header>
+				<h2>
+					发现图书
+				</h2>
+			</header>
+			<div class="section-content">
+				<ul>
+					<li style="border-color: #42BD56;">
+						<a href="https://m.douban.com/doulist/10372/" style="color: #42BD56;">小波看书</a>
+					</li>
+					<li style="border-color: #FF4055;">
+						<a href="https://m.douban.com/doulist/105583/" style="color: #FF4055;">村上春树周边
+						</a>
+					</li>
+					<li style="border-color: #4F9DED;">
+						<a href="https://m.douban.com/doulist/99294/" style="color: #4F9DED;">我凭名字认定了你
+						</a>
+					</li>
+					<li  style="margin: 0 8px 8px 8px;border-color: #FFAC2D;">
+						<a href="https://m.douban.com/doulist/35573/" style="color: #FFAC2D;">不可饶恕的女人们
+						</a>
+					</li>
+					<li  class="line"></li>
+					<li style="border-color: #CC3344;">
+						<a href="https://m.douban.com/doulist/38088147/" style="color: #CC3344;">爱欲书</a></li>
+					<li style="border-color: #2384E8;">
+						<a href="https://m.douban.com/doulist/645579/" style="color: #2384E8;">他们还写侦探小说
+						</a>
+					</li>
+					<li style="border-color: #3BA94D;">
+						<a href="https://m.douban.com/doulist/192653/" style="color: #3BA94D;">人生识字始忧患
+						</a>
+					</li>
+					<li style="border-color: #FFC46C;">
+						<a href="https://m.douban.com/doulist/89925/" style="color: #FFC46C;">詩歌書店
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+	  </section>
+	  <section class="types">
+			<header>
+				<h2>
+					分类浏览
+				</h2>
+			</header>
+			<div class="sections-content">
+				<ul class="type-list">
+					<li><a href="https://m.douban.com/book/novel">小说<span></span></a></li>
+					<li><a href="https://m.douban.com/book/love">爱情<span></span></a></li>
+					<li><a href="https://m.douban.com/book/history">历史<span></span></a></li>
+					<li><a href="https://m.douban.com/book/foreign">外国文学<span></span></a></li>
+					<li><a href="https://m.douban.com/book/youth">青春<span></span></a></li>
+					<li><a href="https://m.douban.com/book/motivation">励志<span></span></a></li>
+					<li><a href="https://m.douban.com/book/essay">随笔<span></span></a></li>
+					<li><a href="https://m.douban.com/book/bio">传记<span></span></a></li>
+					<li><a href="https://m.douban.com/book/detective">推理<span></span></a></li>
+					<li><a href="https://m.douban.com/book/travel">旅行<span></span></a></li>
+					<li><a href="https://m.douban.com/book/fantasy">奇幻<span></span></a></li>
+					<li><a href="https://m.douban.com/book/business">经管<span></span></a></li>
+				</ul>
+			</div>
+	  </section>
+	</div>
+	<div class="download-app">
+		<div class="info">
+			<img src="https://img3.doubanio.com/f/talion/7837f29dd7deab9416274ae374a59bc17b5f33c6/pics/card/douban-app-logo.png" width="48">
+			<div class="info-content">
+				<strong>豆瓣</strong>
+				<div>我们的精神角落</div>
+			</div>
+		</div>
+		<a class="kkk" href="https://www.douban.com/doubanapp/card/log?category=movie_home&cid=&action=click_download&ref=http%3A//www.douban.com/doubanapp/app%3Fchannel%3Dcard_movie_home%26direct_dl%3D1">去 App Store 免费下载 iOS 客户端</a>
+	</div>
+</div>

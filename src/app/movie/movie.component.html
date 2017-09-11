@@ -1,0 +1,301 @@
+<div class="page">
+	<div class="card">
+	  <section class="movie-theatres" style="height: 227px;overflow: hidden;">
+			<header>
+				<h2>
+					影院热映
+				</h2>
+				<a a routerLink="/movie/theatres">更多</a>
+			</header>
+			<div class="section-content">
+				<ul class="row items"> 
+					<li class="item item__movie"  *ngFor="let item of theatres_data">
+						<a [href]="item.alt">
+							<div class="item-poster">
+								<img [src]="item.images.medium">
+							</div>
+							<span class="item-title">{{item.title}}</span>
+							<div class="item-rating">
+								<span class="rating-stars">
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-gray'></span>
+								</span>
+								<span>{{item.rating.average}}</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+	  </section>
+	   <section class="movie-theatres" style="height: 227px;overflow: hidden;" >
+			<header>
+				<h2>
+					免费在线电影
+				</h2>
+				<a routerLink="/movie/theatres">更多</a>
+			</header>
+			<div class="section-content">
+				<ul class="row items"> 
+					<li class="item item__movie">
+						<a href="https://m.douban.com/movie/subject/27061554/?refer=home">
+							<div class="item-poster">
+								<img src="https://qnmob2.doubanio.com/view/movie_poster_cover/lpst/public/p2466335295.jpg?imageView2/0/q/80/w/9999/h/400/format/jpg">
+							</div>
+							<span class="item-title">再见时光</span>
+							<div class="item-rating">
+								<span class="rating-stars">
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-gray'></span>
+								</span>
+								<span>5.4</span>
+							</div>
+						</a>
+					</li>
+					<li class="item item__movie">
+						<a href="https://m.douban.com/movie/subject/26951953?refer=home">
+							<div class="item-poster">
+								<img src="https://qnmob2.doubanio.com/view/movie_poster_cover/lpst/public/p2496390505.jpg?imageView2/0/q/80/w/9999/h/400/format/jpg">
+							</div>
+							<span class="item-title">小戏骨：放开那三国</span>
+							<div class="item-rating">
+								<span class="rating-stars">
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-gray'></span>
+								</span>
+								<span>8.4</span>
+							</div>
+						</a>
+					</li>
+					<li class="item item__movie">
+						<a href="https://m.douban.com/movie/subject/26287783?refer=home">
+							<div class="item-poster">
+								<img src="https://qnmob2.doubanio.com/view/movie_poster_cover/lpst/public/p2458370286.jpg?imageView2/0/q/80/w/9999/h/400/format/jpg">
+							</div>
+							<span class="item-title">不期而遇</span>
+							<div class="item-rating">
+								<span class="rating-stars">
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-gray'></span>
+								</span>
+								<span>3.9</span>
+							</div>
+						</a>
+					</li>
+					<li class="item item__movie">
+						<a href="https://m.douban.com/movie/subject/26323026?refer=home">
+							<div class="item-poster">
+								<img src="https://qnmob2.doubanio.com/view/movie_poster_cover/lpst/public/p2454788953.jpg?imageView2/0/q/80/w/9999/h/400/format/jpg">
+							</div>
+							<span class="item-title">临时演员</span>
+							<div class="item-rating">
+								<span class="rating-stars">
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-gray'></span>
+								</span>
+								<span>3.6</span>
+							</div>
+						</a>
+					</li>
+					<li class="item item__movie">
+						<a href="https://m.douban.com/movie/subject/26932964?refer=home">
+							<div class="item-poster">
+								<img src="https://qnmob2.doubanio.com/view/movie_poster_cover/lpst/public/p2409738554.jpg?imageView2/0/q/80/w/9999/h/400/format/jpg">
+							</div>
+							<span class="item-title">缞神契约</span>
+							<div class="item-rating">
+								<span class="rating-stars">
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-gray'></span>
+								</span>
+								<span>6.7</span>
+							</div>
+						</a>
+					</li>
+					<li class="item item__movie">
+						<a href="https://m.douban.com/movie/subject/26323031?refer=home">
+							<div class="item-poster">
+								<img src="https://qnmob2.doubanio.com/view/movie_poster_cover/lpst/public/p2412519473.jpg?imageView2/0/q/80/w/9999/h/400/format/jpg">
+							</div>
+							<span class="item-title">五十度黑</span>
+							<div class="item-rating">
+								<span class="rating-stars">
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-gray'></span>
+								</span>
+								<span>4.9</span>
+							</div>
+						</a>
+					</li>
+					<li class="item item__movie">
+						<a href="https://m.douban.com/movie/subject/26882327?refer=home">
+							<div class="item-poster">
+								<img src="https://qnmob2.doubanio.com/view/movie_poster_cover/lpst/public/p2452142083.jpg?imageView2/0/q/80/w/9999/h/400/format/jpg">
+							</div>
+							<span class="item-title">血狼犬</span>
+							<div class="item-rating">
+								<span class="rating-stars">
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-gray'></span>
+								</span>
+								<span>5.8</span>
+							</div>
+						</a>
+					</li>
+					<li class="item item__movie">
+						<a href="https://m.douban.com/movie/subject/26590030?refer=home">
+							<div class="item-poster">
+								<img src="https://qnmob2.doubanio.com/view/movie_poster_cover/lpst/public/p2495372416.jpg?imageView2/0/q/80/w/9999/h/400/format/jpg">
+							</div>
+							<span class="item-title">夜闯寡妇村</span>
+							<div class="item-rating">
+								<span class="rating-stars">
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-gray'></span>
+								</span>
+								<span>2.2</span>
+							</div>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+	  </section>
+	   <section  style="height: 227px;overflow: hidden;">
+			<header>
+				<h2>
+					新片速递
+				</h2>
+				<a routerLink="/movie/newFilm">更多</a>
+			</header>
+			<div class="section-content">
+				<ul class="row items"> 
+					<li class="item item__movie"  *ngFor="let item of newFilm_data">
+						<a [href]="item.alt">
+							<div class="item-poster">
+								<img [src]="item.images.medium">
+							</div>
+							<span class="item-title">{{item.title}}</span>
+							<div class="item-rating">
+								<span class="rating-stars">
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-full'></span>
+									<span class='rating-star rating-star-small-gray'></span>
+								</span>
+								<span>{{item.rating.average}}</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+	  </section>
+	   <section class="interests" style="height: 180px;overflow: hidden;">
+			<header>
+				<h2>
+					发现好电影
+				</h2>
+			</header>
+			<div class="section-content">
+				<ul>
+					<li style="border-color: #42BD56;">
+						<a href="https://m.douban.com/doulist/968362/" style="color: #42BD56;">同时入选IMDB250和豆瓣电影250的电影</a>
+					</li>
+					<li style="border-color: #FF4055;">
+						<a href="https://m.douban.com/doulist/16002/" style="color: #FF4055;">带你进入不正常的世界
+						</a>
+					</li>
+					<li style="border-color: #4F9DED;">
+						<a href="https://m.douban.com/doulist/190343/" style="color: #4F9DED;">用电【影】来祭奠逝去的岁月
+						</a>
+					</li>
+					<li  style="margin: 0 8px 8px 8px;border-color: #FFAC2D;">
+						<a href="https://m.douban.com/doulist/1125971/" style="color: #FFAC2D;">女孩们的故事【电影】
+						</a>
+					</li>
+					<li  class="line"></li>
+					<li style="border-color: #CC3344;">
+						<a href="https://m.douban.com/doulist/4253902/" style="color: #CC3344;">科幻是未来的钥匙——科幻启示录【科幻题材】</a></li>
+					<li style="border-color: #2384E8;">
+						<a href="https://m.douban.com/doulist/121326/" style="color: #2384E8;">美国生活面面观
+						</a>
+					</li>
+					<li style="border-color: #3BA94D;">
+						<a href="https://m.douban.com/doulist/37479562/" style="color: #3BA94D;">2015终极期待
+						</a>
+					</li>
+					<li style="border-color: #FFC46C;">
+						<a href="https://m.douban.com/doulist/458087/" style="color: #FFC46C;">经典韩国电影——收集100部
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+	  </section>
+	  <section class="types">
+			<header>
+				<h2>
+					分类浏览
+				</h2>
+			</header>
+			<div class="sections-content">
+				<ul class="type-list">
+					<li><a href="https://m.douban.com/movie/classic">经典<span></span></a></li>
+					<li><a href="https://m.douban.com/movie/underrated">冷门佳片<span></span></a></li>
+					<li><a href="https://m.douban.com/movie/doubantop">豆瓣高分<span></span></a></li>
+					<li><a href="https://m.douban.com/movie/action">动作<span></span></a></li>
+					<li><a href="https://m.douban.com/movie/comedy">喜剧<span></span></a></li>
+					<li><a href="https://m.douban.com/movie/love">爱情<span></span></a></li>
+					<li><a href="https://m.douban.com/movie/mystery">悬疑<span></span></a></li>
+					<li><a href="https://m.douban.com/movie/horror">恐怖<span></span></a></li>
+					<li><a href="https://m.douban.com/movie/scifi">科幻<span></span></a></li>
+					<li><a href="https://m.douban.com/movie/sweet">治愈<span></span></a></li>
+					<li><a href="https://m.douban.com/movie/artfilm">文艺<span></span></a></li>
+					<li><a href="https://m.douban.com/movie/youth">成长<span></span></a></li>
+					<li><a href="https://m.douban.com/movie/animation">动画<span></span></a></li>
+					<li><a href="https://m.douban.com/movie/chinese">华语<span></span></a></li>
+					<li><a href="https://m.douban.com/movie/western">欧美<span></span></a></li>
+					<li><a href="https://m.douban.com/movie/korean">韩国<span></span></a></li>
+					<li><a href="https://m.douban.com/movie/japanese">日本<span></span></a></li>
+				</ul>
+			</div>
+	  </section>
+	</div>
+	<div class="download-app">
+		<div class="info">
+			<img src="https://img3.doubanio.com/f/talion/7837f29dd7deab9416274ae374a59bc17b5f33c6/pics/card/douban-app-logo.png" width="48">
+			<div class="info-content">
+				<strong>豆瓣</strong>
+				<div>我们的精神角落</div>
+			</div>
+		</div>
+		<a class="kkk" href="https://www.douban.com/doubanapp/card/log?category=movie_home&cid=&action=click_download&ref=http%3A//www.douban.com/doubanapp/app%3Fchannel%3Dcard_movie_home%26direct_dl%3D1">去 App Store 免费下载 iOS 客户端</a>
+	</div>
+</div>

@@ -1,0 +1,38 @@
+<div class="container">
+	<ul class="quick-nav clear">
+		<li>
+			<a routerLink="/movie/theatres">影院热映</a>
+		</li>
+		<li>
+			<a href="">日韩新碟榜</a>
+		</li>
+		<li>
+			<a href="https://m.douban.com/time/?dt_time_source=douban-msite_shortcut">豆瓣时间</a>
+		</li>
+		<li>
+			<a href="https://www.douban.com/doubanapp/app?channel=card_home&direct_dl=1">使用豆瓣app</a>
+		</li>
+	</ul>
+	<section class="recommend-feed">
+		<div class="feed-section">
+			<a href="{{item.href}}" *ngFor="let item of data_information"  class="feed-item">
+				<div class="feed-content">
+					<div class="cover">
+						<img src="{{item.imgUrl}}" style="width: 100%;height: 100%;">
+					</div>
+					<h3>{{item.title}}</h3>
+					<p>{{item.link}}</p>
+				</div>
+				<div class="author">
+					by 
+					<span class="name">
+						{{item.authorName}}
+					</span>
+				</div>
+				<span class="feed-label">
+					{{item.label}}
+				</span>
+			</a>
+		</div>
+	</section>
+</div>

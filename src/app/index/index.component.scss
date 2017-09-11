@@ -1,0 +1,80 @@
+.container{
+	padding-top:47px;
+	    max-width: 650px;
+    background: #fff;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.quick-nav{
+	margin:20px 0 0 0;
+	padding-top:6px;
+	width: 348px;
+	li{
+		float:left;
+		padding:3px;
+		width: 50%;
+		a{
+			width: 100%;
+			background: #f6f6f6;
+			padding:12px 0;
+			text-align: center;
+			display: block;
+			line-height: 20px;
+			font-size: 15px;
+			color: #494949;
+			text-decoration: none;
+		}
+	}
+}
+.recommend-feed{
+	margin-right:-18px;
+	margin-left:-18px;
+	.feed-item{
+		border-bottom:1px solid #eee;
+		text-decoration: none;
+		display: block;
+		padding:25px 18px 25px 0;
+		margin-left: 18px;
+		position: relative;
+		color: #494949;
+		width: 55%;
+		.feed-content{
+			overflow: hidden;
+			margin-bottom: 10px;
+			.cover{
+				width: 25.6%;
+				margin-left: 25px;
+				float: right;
+			}
+			h3{
+				text-align:justify;
+				font-size: 17px;
+				font-weight: 500;
+				line-height: 1.41;
+				margin-bottom: 6px;
+				color: #494949;
+			}
+			p{
+				text-align: justify;
+			    color: #aaa;
+			    font-size: 12px;
+			    line-height: 1.5;
+			    display: -webkit-box;
+			    overflow: hidden;
+			    -webkit-box-orient: vertical;
+			    -webkit-line-clamp: 3;
+			}
+		}
+		.author{
+			    font-size: 12px;
+    			color: #ccc;
+		}
+		.feed-label{
+			    position: absolute;
+			    bottom: 25px;
+			    right: 18px;
+			    font-size: 12px;
+			    color: #ccc;
+		}
+	}
+}

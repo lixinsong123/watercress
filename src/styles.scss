@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+h1,li,ul,h2,h3,h4{
+	margin:0;
+	padding:0;
+	    font-weight: normal;
+}
+li{
+	list-style:none;
+}
+html,body{overflow-x:hidden;overflow-y:auto;}
+.fl{
+	float: left;
+}
+.rt{
+	float:right;
+}
+.clear:after{
+			content: '';
+			display: block;
+			clear: both;	
+}
+.clear{
+	*zoom:1;
+}

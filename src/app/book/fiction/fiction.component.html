@@ -1,0 +1,28 @@
+<div class="warp">
+	<h1>最受关注图书｜虚构类</h1>
+	<section class="list">
+		<a [href]="item.href" class="item" *ngFor="let item of fiction_data">
+			<div class="cover">
+				<div class="wp">
+					<img [src]="item.src">
+				</div>
+			</div>
+			<div class="info">
+				<h3>{{item.title}}</h3>
+				<div class="item-rating">
+					<span class="rating-stars">
+						<span class='rating-star rating-star-small-full'></span>
+						<span class='rating-star rating-star-small-full'></span>
+						<span class='rating-star rating-star-small-full'></span>
+						<span class='rating-star rating-star-small-full'></span>
+						<span class='rating-star rating-star-small-gray'></span>
+					</span>
+					<span>{{item.range}}</span>
+				</div>
+				<p class="meta">
+					{{item.link}}
+				</p>
+			</div>
+		</a>
+	</section>
+</div>
